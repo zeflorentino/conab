@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="soja/soja.css" />
+    <title>A soja</title>
+  </head>
+  <body>
+    <div class="abertura">
+      <h1>A safra brasileira de soja</h1>
+    </div>
+    <div class="reportagem">
+      <p id="producao"></p>
+      <div class="conjuntograficos">
+        <div class="filtrar">
+          <span class="labelmenor">Comparativo anual de</span>
+          <select id="filtro" class="novaselecao">
+            <option value="producao">produção</option>
+            <option value="produtividade">produtividade</option>
+            <option value="area">área</option>
+          </select>
+        </div>
+        <div class="graficobarra" id="graficoproducao"></div>
+        <div class="graficobarra oculto" id="graficoarea"></div>
+        <div class="graficobarra oculto" id="graficoprodutividade"></div>
+      </div>
+    </div>
+    <span class="labelmenor">Veja os Estados</span>
+    <div class="contem-mapa">
+      <div class="mapaelegenda">
+        <div class="legendamapa"></div>
+        <div class="ordem">< Menor produção | Maior produção ></div>
+        <div class="textolegenda">
+          <span class="bold">(passe o mouse)</span>
+        </div>
+        <div class="textolegendamobile">
+          <span class="bold">(selecione um Estado )</span>
+        </div>
+
+        <select id="filtroestados" class="novaselecao"> </select>
+
+        <div id="map-box"></div>
+      </div>
+      <div class="contemdescricao">
+        <div id="descricaomapa"></div>
+        <div id="graficosestado">
+          <div id="gprodest"></div>
+          <div id="gareaest"></div>
+          <div id="grendest"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.0.0"></script>
+    <script src="soja/sojabase.js"></script>
+    <script src="soja/graficosleadsoja.js"></script>
+    <script src="soja/mapasoja.js"></script>
+    <script src="soja/seletorsoja.js"></script>
+  </body>
+</html>

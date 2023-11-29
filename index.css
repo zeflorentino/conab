@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Georgia";
+}
+
+h1 {
+  display: flex;
+  background-color: #2f4f2f;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.safras {
+  display: flex;
+  flex-direction: row;
+  padding: auto;
+}
+
+.safrasoja,
+.saframilho {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 42px;
+}
+
+.saframilho {
+  background-image: url("https://i.postimg.cc/zDYvnY68/dprz-rpg-A-corn-plantation-in-pixel-art-8bits-8-bit-e1941e9d-6105-4845-ae0f-94339170e36b-1.png");
+}
+
+.safrasoja {
+  background-image: url("https://i.postimg.cc/Jr6kz4Lh/soja.webp");
+}
+
+.clicavel {
+  background-color: #daa520;
+  color: white;
+  height: 76px;
+  padding: 15px;
+  text-align: center;
+}
