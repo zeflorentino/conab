@@ -4,7 +4,7 @@ let graficoEstadoDiv = document.querySelector("#graficosestado");
 async function loadMapData() {
   try {
     let mapaUrl =
-      "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=image/svg+xml&qualidade=maxima&intrarregiao=UF";
+      "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=image/svg+xml&qualidade=intermediaria&intrarregiao=UF";
 
     let mapaSvg = await fetch(mapaUrl);
     mapaMalha = await mapaSvg.text();
