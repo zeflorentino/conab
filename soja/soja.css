@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Georgia";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--corfundo);
+  row-gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  max-width: 600px;
+  height: 50px;
+  margin-left: auto;
+  font-size: 42px;
+  color: white;
+  background-color: #2f4f2f;
+}
+
+h2 {
+  color: #2f4f2f;
+}
+
+h4 {
+  color: black;
+  padding: 0 5px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  color: black;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.novaselecao {
+  font-weight: bold;
+  appearance: none;
+  width: auto;
+  color: black;
+  padding: 5px;
+  border: 0;
+  background-color: white;
+  border-bottom: 5px dashed #2f4f2f;
+  font-size: 22px;
+  outline: none;
+  margin: 0;
+}
+
+.labelmenor {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+
+.filtrar {
+  text-align: center;
+}
+
+.abertura {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  background-image: url("https://i.postimg.cc/Jr6kz4Lh/soja.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.reportagem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  width: 95%;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.textolateral {
+  width: 40%;
+  color: black;
+}
+
+.destaqueamarelo {
+  color: #2f4f2f;
+  font-weight: bold;
+}
+
+.disclaimer {
+  color: #2f4f2f;
+  font-weight: bold;
+}
+
+.conjuntograficos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  row-gap: 40px;
+}
+
+.graficobarra {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 25px;
+}
+
+.ano {
+  display: flex;
+  flex-direction: row;
+}
+
+.ativo {
+  display: flex;
+}
+
+.oculto {
+  display: none;
+}
+
+#map-box > svg {
+  width: 100%;
+  height: 90vh;
+  max-width: 600px;
+  cursor: pointer;
+  stroke: #2f4f2f;
+  stroke-width: 300;
+}
+
+path:hover {
+  box-shadow: black;
+  opacity: 0.9;
+  stroke: #2f4f2f;
+  stroke-width: 2500;
+}
+
+#descricaomapa {
+  color: black;
+}
+
+.mapaelegenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contem-mapa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+#graficosestado {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 15px;
+}
+
+#gprodest,
+#gareaest,
+#grendest {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 15px;
+}
+
+.contemdescricao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  height: 100vh;
+  row-gap: 30px;
+}
+
+.anoest {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.valorano {
+  margin-left: 10px;
+  max-width: 5%;
+}
+
+.legendaano,
+.legendaanoest {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  flex: 15% 0 0;
+}
+
+.legendaano {
+  width: 90px;
+}
+
+.legendaanoest {
+  width: 65px;
+  font-size: 14px;
+  height: 20px;
+}
+
+.barraano,
+.barraanoest {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  height: 40px;
+  background-color: #2f4f2f;
+  color: black;
+  font-weight: bold;
+}
+
+.barraano {
+  justify-content: flex-end;
+}
+
+.barraanoest {
+  justify-content: flex-end;
+  height: 20px;
+  font-size: 14px;
+}
+
+.disclaimer2 {
+  color: #2f4f2f;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.legendamapa {
+  width: 200px;
+  height: 25px;
+  background: linear-gradient(90deg, #cbcccd 20%, #2f4f2f 100%);
+}
+
+.textolegenda,
+.textolegendamobile,
+.ordem {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.textolegendamobile {
+  display: none;
+}
+
+.textolegenda {
+  display: flex;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#filtroestados {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    width: 100%;
+  }
+  .abertura {
+    flex-direction: column;
+  }
+  h1 {
+    height: auto;
+  }
+  .cultura {
+    width: auto;
+  }
+  .contem-mapa {
+    display: flex;
+    flex-direction: column;
+  }
+  #map-box {
+    display: flex;
+    width: 95%;
+  }
+  .contemdescricao {
+    width: 95%;
+    margin-top: 30px;
+  }
+  #map-box {
+    display: none;
+  }
+  #descricaomapa {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .selecionaestado {
+    display: flex;
+  }
+  .textolegendamobile {
+    display: flex;
+  }
+  .textolegenda {
+    display: none;
+  }
+  #filtroestados {
+    display: flex;
+  }
+}
