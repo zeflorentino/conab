@@ -1,0 +1,338 @@
+:root {
+  --cor1: black;
+  --cor2: #daa520;
+  --cor3: white;
+  --cor4: #2f4f2f;
+  --cor5: #0e0e0e;
+  --corfundo: black;
+  --imagem-fundo: url("https://i.postimg.cc/zDYvnY68/dprz-rpg-A-corn-plantation-in-pixel-art-8bits-8-bit-e1941e9d-6105-4845-ae0f-94339170e36b-1.png");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Georgia";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--corfundo);
+  row-gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  max-width: 600px;
+  height: 50px;
+  margin-left: auto;
+  font-size: 42px;
+  background-color: var(--cor2);
+}
+
+h2 {
+  color: var(--cor2);
+}
+
+h4,
+h1 {
+  color: var(--cor3);
+  padding: 0 5px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  color: var(--cor3);
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.novaselecao {
+  font-weight: bold;
+  appearance: none;
+  width: auto;
+  color: var(--cor3);
+  padding: 5px;
+  border: 0;
+  background-color: var(--cor1);
+  border-bottom: 5px dashed var(--cor2);
+  font-size: 22px;
+  outline: none;
+  margin: 0;
+}
+
+.labelmenor {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--cor3);
+}
+
+.filtrar {
+  text-align: center;
+}
+
+.abertura {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  background-image: var(--imagem-fundo);
+  background-size: cover;
+  background-position: center;
+}
+
+.reportagem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  width: 95%;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.textolateral {
+  width: 40%;
+  color: var(--cor3);
+}
+
+.destaqueamarelo {
+  color: var(--cor2);
+  font-weight: bold;
+}
+
+.disclaimer {
+  color: var(--cor2);
+  font-weight: bold;
+}
+
+.conjuntograficos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  row-gap: 40px;
+}
+
+.graficobarra {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 25px;
+}
+
+.ano {
+  display: flex;
+  flex-direction: row;
+}
+
+.ativo {
+  display: flex;
+}
+
+.oculto {
+  display: none;
+}
+
+#map-box > svg {
+  width: 100%;
+  height: 90vh;
+  max-width: 600px;
+  cursor: pointer;
+  stroke: var(--cor4);
+  stroke-width: 300;
+}
+
+path:hover {
+  box-shadow: var(--cor1);
+  opacity: 0.9;
+  stroke: var(--cor4);
+  stroke-width: 2500;
+}
+
+#descricaomapa {
+  color: var(--cor3);
+}
+
+.mapaelegenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contem-mapa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor3);
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+#graficosestado {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 15px;
+}
+
+#gprodest,
+#gareaest,
+#grendest {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 15px;
+}
+
+.contemdescricao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  height: 100vh;
+  row-gap: 30px;
+}
+
+.anoest {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.valorano {
+  margin-left: 10px;
+  max-width: 5%;
+}
+
+.legendaano,
+.legendaanoest {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor3);
+  font-weight: bold;
+}
+
+.legendaano {
+  width: 90px;
+}
+
+.legendaanoest {
+  width: 65px;
+  font-size: 14px;
+  height: 20px;
+}
+
+.barraano,
+.barraanoest {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  height: 40px;
+  background-color: var(--cor2);
+  color: var(--cor3);
+  font-weight: bold;
+}
+
+.barraano {
+  justify-content: flex-end;
+}
+
+.barraanoest {
+  justify-content: flex-end;
+  height: 20px;
+  font-size: 14px;
+}
+
+.disclaimer2 {
+  color: var(--cor2);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.legendamapa {
+  width: 200px;
+  height: 25px;
+  background: linear-gradient(90deg, #0e0e0e 20%, var(--cor2) 100%);
+}
+
+.textolegenda,
+.textolegendamobile,
+.ordem {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.textolegendamobile {
+  display: none;
+}
+
+.textolegenda {
+  display: flex;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#filtroestados {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    width: 100%;
+  }
+  .abertura {
+    flex-direction: column;
+  }
+  h1 {
+    height: auto;
+  }
+  .cultura {
+    width: auto;
+  }
+  .contem-mapa {
+    display: flex;
+    flex-direction: column;
+  }
+  #map-box {
+    display: flex;
+    width: 95%;
+  }
+  .contemdescricao {
+    width: 95%;
+    margin-top: 30px;
+  }
+  #map-box {
+    display: none;
+  }
+  #descricaomapa {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .selecionaestado {
+    display: flex;
+  }
+  .textolegendamobile {
+    display: flex;
+  }
+  .textolegenda {
+    display: none;
+  }
+  #filtroestados {
+    display: flex;
+  }
+}
