@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  workflow_dispatch:  
 
 jobs:
   build:
@@ -36,15 +36,20 @@ jobs:
     - name: Run Python script
       run: |
         python conab.py
-
-    - name: Commit changes
-      run: |
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git add .
-        git commit -m "Add generated files by conab.py"
         
-    - name: Push changes
-      uses: ad-m/github-push-action@v0.6.0
+    - name: List files after running Python script
+      run: ls -R
+      
+    - name: Upload CSVs as artifacts
+      uses: actions/upload-artifact@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        name: csv-files
+        path: milhototal.csv soja.csv
+
+    - name: Commit and Push CSV files
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+        git add milhototal.csv soja.csv
+        git commit -m "Add generated CSV files"
+        git push
