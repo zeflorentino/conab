@@ -156,10 +156,12 @@ async function loadMapData() {
             document.querySelector(
                 "#descricaomapa"
             ).innerHTML = `<span class="destaqueamarelo">${estadouf}</span> não produz soja</span>`;
+            document.querySelector("#graficosestado").style.display = "none";
         } else {
             document.querySelector(
                 "#descricaomapa"
             ).innerHTML = `<span class="destaqueamarelo">${estadouf}</span> deve colher <span class="destaqueamarelo">${estadoprod} milhões de toneladas</span>, com uma área de <span class="destaqueamarelo">${estadoarea} milhões de hectares</span> e um rendimento médio de <span class="destaqueamarelo">${estadorend} toneladas por hectare.</span>`;
+            document.querySelector("#graficosestado").style.display = "flex";
         }
     }
 });
