@@ -155,7 +155,7 @@ async function loadMapData() {
           if (estadorend === "0,00") {
             document.querySelector(
                 "#descricaomapa"
-            ).innerHTML = `<span class="destaqueamarelo">${estadouf}</span> não tem produção de soja</span>`;
+            ).innerHTML = `<span class="destaqueamarelo">${estadouf}</span> não produz soja</span>`;
         } else {
             document.querySelector(
                 "#descricaomapa"
