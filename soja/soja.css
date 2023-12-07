@@ -149,6 +149,7 @@ path:hover {
 
 #descricaomapa {
   color: black;
+  width: 300px;
 }
 
 .mapaelegenda {
@@ -311,6 +312,7 @@ path:hover {
     display: none;
   }
   #descricaomapa {
+    width: 95%;
     max-width: 600px;
     margin: 0 auto;
   }
