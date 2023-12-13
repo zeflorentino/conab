@@ -19,6 +19,8 @@ h1 {
   height: 50px;
   margin-left: auto;
   font-size: 42px;
+  padding: 0 5px;
+  color: white;
   background-color: #2f4f2f;
 }
 
