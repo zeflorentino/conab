@@ -53,3 +53,20 @@ a {
   padding: 15px;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  * {
+    width: 100%;
+  }
+  h1 {
+    height: 20vh;
+  }
+  .safras {
+    flex-direction: column;
+  }
+  .safrasoja,
+  .saframilho {
+    width: 100%;
+    height: 40vh;
+  }
+}
