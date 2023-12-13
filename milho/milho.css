@@ -332,6 +332,12 @@ path:hover {
   .textolegenda {
     display: none;
   }
+  .legendamapa {
+    display: none;
+  }
+  .ordem {
+    display: none;
+  }
   #filtroestados {
     display: flex;
   }
