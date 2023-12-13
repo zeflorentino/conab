@@ -40,7 +40,7 @@ def pegalink(mes, ano):
   link = 'https://www.conab.gov.br/info-agro/safras/graos/boletim-da-safra-de-graos'
   response = requests.get(link)
   soup = bs(response.text, 'html.parser')
-  elemento = soup.find('a', title=f"Site_PREVISAO_DE_SAFRA-POR_PRODUTO-{mes}-{ano}.xlsx")
+  elemento = soup.find('a', title=f"Site_PREVISAO_DE_SAFRA-POR_PRODUTO-NOV-{ano}.xlsx")
   elemento_href = elemento.get('href')
   prefixo = 'https://www.conab.gov.br'
   link_download = prefixo + elemento_href
