@@ -54,7 +54,6 @@ p {
 
 .novaselecao {
   font-weight: bold;
-  appearance: none;
   width: auto;
   color: var(--cor3);
   padding: 5px;
