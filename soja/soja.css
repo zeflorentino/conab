@@ -331,6 +331,9 @@ path:hover {
   .ordem {
     display: none;
   }
+  .labelmenor {
+    text-align: center;
+  }
   #filtroestados {
     display: flex;
   }
