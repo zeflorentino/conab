@@ -290,6 +290,16 @@ path:hover {
 #filtroestados {
   display: none;
 }
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #daa520;
+  color: white;
+}
+.clicavel {
+  padding: 15px;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   * {
