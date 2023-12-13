@@ -291,6 +291,10 @@ path:hover {
   display: none;
 }
 footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 70px;
   background-color: #daa520;
@@ -299,6 +303,10 @@ footer {
 .clicavel {
   padding: 15px;
   text-align: center;
+}
+a {
+  text-decoration: none;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
