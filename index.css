@@ -49,11 +49,12 @@ a {
 .clicavel {
   background-color: #daa520;
   color: white;
-  width: 50%;
+  width: auto;
+  max-width: 50%;
   height: 76px;
   padding: 15px;
   text-align: center;
-  border-radius: 25%;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 768px) {
