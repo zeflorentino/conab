@@ -15,11 +15,10 @@ body {
 }
 
 h1 {
-  max-width: 600px;
+  width: auto;
   height: 50px;
   margin-left: auto;
   font-size: 42px;
-  color: white;
   background-color: #2f4f2f;
 }
 
